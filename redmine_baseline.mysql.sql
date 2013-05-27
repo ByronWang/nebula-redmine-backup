@@ -39,7 +39,7 @@ CREATE TABLE `attachments` (
   KEY `index_attachments_on_author_id` (`author_id`),
   KEY `index_attachments_on_created_on` (`created_on`),
   KEY `index_attachments_on_container_id_and_container_type` (`container_id`,`container_type`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -48,6 +48,7 @@ CREATE TABLE `attachments` (
 
 LOCK TABLES `attachments` WRITE;
 /*!40000 ALTER TABLE `attachments` DISABLE KEYS */;
+INSERT INTO `attachments` VALUES (1,1,'Issue','tftp.exe','130527152258_tftp.exe',764928,'application/x-msdownload','2a90e85eb07af8e704ab8af5d1b1c5e2',0,3,'2013-05-27 15:22:59','');
 /*!40000 ALTER TABLE `attachments` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -627,7 +628,7 @@ CREATE TABLE `issues` (
 
 LOCK TABLES `issues` WRITE;
 /*!40000 ALTER TABLE `issues` DISABLE KEYS */;
-INSERT INTO `issues` VALUES (1,2,1,'规划下一阶段成果物','',NULL,NULL,1,3,4,NULL,3,0,'2013-05-27 13:09:34','2013-05-27 13:09:34','2013-05-27',0,NULL,NULL,1,1,2,0),(2,2,1,'业务数据归档分类模式需要设计实施','',NULL,NULL,1,3,4,NULL,3,1,'2013-05-27 13:11:02','2013-05-27 13:47:23','2013-05-27',0,NULL,NULL,2,1,2,0),(3,2,1,'重构tx类型数据维护方法','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:11:14','2013-05-27 13:11:14','2013-05-27',0,NULL,NULL,3,1,2,0),(4,2,1,'前台Type明细编辑画面的返回按钮当前返回错误','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:11:25','2013-05-27 13:11:25','2013-05-27',0,NULL,NULL,4,1,2,0),(5,2,1,'翻页功能增强-可指定每页Size','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:11:40','2013-05-27 13:11:40','2013-05-27',0,NULL,NULL,5,1,2,0),(6,2,1,'基本画面-区分原始内容和配置内容','',NULL,NULL,1,3,4,NULL,3,1,'2013-05-27 13:22:10','2013-05-27 13:47:59','2013-05-27',0,NULL,NULL,6,1,2,0),(7,2,1,'对于无意义的ID，需要能够自动判断出来，并在画面表示中采用合理方式表示，比如不显示','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:45:06','2013-05-27 13:45:06','2013-05-27',0,NULL,NULL,7,1,2,0),(8,2,1,'添加菜单时需要追加选择图标的功能','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:45:15','2013-05-27 13:45:15','2013-05-27',0,NULL,NULL,8,1,2,0),(9,2,1,'添加菜单时需要追加选择菜单位置的功能','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:45:26','2013-05-27 13:45:26','2013-05-27',0,NULL,NULL,9,1,2,0),(10,2,1,'菜单应该可以包含子菜单，当前只能显示一级菜单，需要改造','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:45:38','2013-05-27 13:45:38','2013-05-27',0,NULL,NULL,10,1,2,0),(11,2,1,'菜单名称和表示名称需要区分，可能需要与一般Name的处理方式放在一起考虑','',NULL,NULL,1,3,4,NULL,3,1,'2013-05-27 13:45:49','2013-05-27 13:48:43','2013-05-27',0,NULL,NULL,11,1,2,0),(12,2,1,'编辑对象明细中的数组对象时，校验处理错误','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:45:59','2013-05-27 13:45:59','2013-05-27',0,NULL,NULL,12,1,2,0),(13,2,1,'对象明细中的数组对象只有添加和删除功能，无编辑功能','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:46:11','2013-05-27 13:46:11','2013-05-27',0,NULL,NULL,13,1,2,0),(14,2,1,'选择应用对象的输入框需要改造，选择的是整个对象，而不是应用对象的某个字段','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:46:20','2013-05-27 13:46:20','2013-05-27',0,NULL,NULL,14,1,2,0);
+INSERT INTO `issues` VALUES (1,2,1,'规划下一阶段成果物','',NULL,NULL,1,3,4,NULL,3,1,'2013-05-27 13:09:34','2013-05-27 15:22:59','2013-05-27',0,NULL,NULL,1,1,2,0),(2,2,1,'业务数据归档分类模式需要设计实施','',NULL,NULL,1,3,4,NULL,3,1,'2013-05-27 13:11:02','2013-05-27 13:47:23','2013-05-27',0,NULL,NULL,2,1,2,0),(3,2,1,'重构tx类型数据维护方法','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:11:14','2013-05-27 13:11:14','2013-05-27',0,NULL,NULL,3,1,2,0),(4,2,1,'前台Type明细编辑画面的返回按钮当前返回错误','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:11:25','2013-05-27 13:11:25','2013-05-27',0,NULL,NULL,4,1,2,0),(5,2,1,'翻页功能增强-可指定每页Size','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:11:40','2013-05-27 13:11:40','2013-05-27',0,NULL,NULL,5,1,2,0),(6,2,1,'基本画面-区分原始内容和配置内容','',NULL,NULL,1,3,4,NULL,3,1,'2013-05-27 13:22:10','2013-05-27 13:47:59','2013-05-27',0,NULL,NULL,6,1,2,0),(7,2,1,'对于无意义的ID，需要能够自动判断出来，并在画面表示中采用合理方式表示，比如不显示','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:45:06','2013-05-27 13:45:06','2013-05-27',0,NULL,NULL,7,1,2,0),(8,2,1,'添加菜单时需要追加选择图标的功能','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:45:15','2013-05-27 13:45:15','2013-05-27',0,NULL,NULL,8,1,2,0),(9,2,1,'添加菜单时需要追加选择菜单位置的功能','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:45:26','2013-05-27 13:45:26','2013-05-27',0,NULL,NULL,9,1,2,0),(10,2,1,'菜单应该可以包含子菜单，当前只能显示一级菜单，需要改造','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:45:38','2013-05-27 13:45:38','2013-05-27',0,NULL,NULL,10,1,2,0),(11,2,1,'菜单名称和表示名称需要区分，可能需要与一般Name的处理方式放在一起考虑','',NULL,NULL,1,3,4,NULL,3,1,'2013-05-27 13:45:49','2013-05-27 13:48:43','2013-05-27',0,NULL,NULL,11,1,2,0),(12,2,1,'编辑对象明细中的数组对象时，校验处理错误','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:45:59','2013-05-27 13:45:59','2013-05-27',0,NULL,NULL,12,1,2,0),(13,2,1,'对象明细中的数组对象只有添加和删除功能，无编辑功能','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:46:11','2013-05-27 13:46:11','2013-05-27',0,NULL,NULL,13,1,2,0),(14,2,1,'选择应用对象的输入框需要改造，选择的是整个对象，而不是应用对象的某个字段','',NULL,NULL,1,NULL,4,NULL,3,0,'2013-05-27 13:46:20','2013-05-27 13:46:20','2013-05-27',0,NULL,NULL,14,1,2,0);
 /*!40000 ALTER TABLE `issues` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -647,7 +648,7 @@ CREATE TABLE `journal_details` (
   `value` text,
   PRIMARY KEY (`id`),
   KEY `journal_details_journal_id` (`journal_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -656,7 +657,7 @@ CREATE TABLE `journal_details` (
 
 LOCK TABLES `journal_details` WRITE;
 /*!40000 ALTER TABLE `journal_details` DISABLE KEYS */;
-INSERT INTO `journal_details` VALUES (1,1,'attr','assigned_to_id',NULL,'3'),(2,2,'attr','assigned_to_id',NULL,'3'),(3,3,'attr','assigned_to_id',NULL,'3');
+INSERT INTO `journal_details` VALUES (1,1,'attr','assigned_to_id',NULL,'3'),(2,2,'attr','assigned_to_id',NULL,'3'),(3,3,'attr','assigned_to_id',NULL,'3'),(4,4,'attachment','1',NULL,'tftp.exe');
 /*!40000 ALTER TABLE `journal_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -679,7 +680,7 @@ CREATE TABLE `journals` (
   KEY `index_journals_on_user_id` (`user_id`),
   KEY `index_journals_on_journalized_id` (`journalized_id`),
   KEY `index_journals_on_created_on` (`created_on`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -688,7 +689,7 @@ CREATE TABLE `journals` (
 
 LOCK TABLES `journals` WRITE;
 /*!40000 ALTER TABLE `journals` DISABLE KEYS */;
-INSERT INTO `journals` VALUES (1,2,'Issue',3,NULL,'2013-05-27 13:47:23'),(2,6,'Issue',3,NULL,'2013-05-27 13:47:59'),(3,11,'Issue',3,NULL,'2013-05-27 13:48:43');
+INSERT INTO `journals` VALUES (1,2,'Issue',3,NULL,'2013-05-27 13:47:23'),(2,6,'Issue',3,NULL,'2013-05-27 13:47:59'),(3,11,'Issue',3,NULL,'2013-05-27 13:48:43'),(4,1,'Issue',3,'','2013-05-27 15:22:59');
 /*!40000 ALTER TABLE `journals` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1394,3 +1395,104 @@ CREATE TABLE `wiki_pages` (
 
 LOCK TABLES `wiki_pages` WRITE;
 /*!40000 ALTER TABLE `wiki_pages` DISABLE KEYS */;
+/*!40000 ALTER TABLE `wiki_pages` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `wiki_redirects`
+--
+
+DROP TABLE IF EXISTS `wiki_redirects`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `wiki_redirects` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `wiki_id` int(11) NOT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `redirects_to` varchar(255) DEFAULT NULL,
+  `created_on` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `wiki_redirects_wiki_id_title` (`wiki_id`,`title`),
+  KEY `index_wiki_redirects_on_wiki_id` (`wiki_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `wiki_redirects`
+--
+
+LOCK TABLES `wiki_redirects` WRITE;
+/*!40000 ALTER TABLE `wiki_redirects` DISABLE KEYS */;
+/*!40000 ALTER TABLE `wiki_redirects` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `wikis`
+--
+
+DROP TABLE IF EXISTS `wikis`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `wikis` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `project_id` int(11) NOT NULL,
+  `start_page` varchar(255) NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`),
+  KEY `wikis_project_id` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `wikis`
+--
+
+LOCK TABLES `wikis` WRITE;
+/*!40000 ALTER TABLE `wikis` DISABLE KEYS */;
+INSERT INTO `wikis` VALUES (1,1,'Wiki',1);
+/*!40000 ALTER TABLE `wikis` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `workflows`
+--
+
+DROP TABLE IF EXISTS `workflows`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `workflows` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tracker_id` int(11) NOT NULL DEFAULT '0',
+  `old_status_id` int(11) NOT NULL DEFAULT '0',
+  `new_status_id` int(11) NOT NULL DEFAULT '0',
+  `role_id` int(11) NOT NULL DEFAULT '0',
+  `assignee` tinyint(1) NOT NULL DEFAULT '0',
+  `author` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `wkfs_role_tracker_old_status` (`role_id`,`tracker_id`,`old_status_id`),
+  KEY `index_workflows_on_old_status_id` (`old_status_id`),
+  KEY `index_workflows_on_role_id` (`role_id`),
+  KEY `index_workflows_on_new_status_id` (`new_status_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=145 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `workflows`
+--
+
+LOCK TABLES `workflows` WRITE;
+/*!40000 ALTER TABLE `workflows` DISABLE KEYS */;
+INSERT INTO `workflows` VALUES (1,1,1,2,3,0,0),(2,1,1,3,3,0,0),(3,1,1,4,3,0,0),(4,1,1,5,3,0,0),(5,1,1,6,3,0,0),(6,1,2,1,3,0,0),(7,1,2,3,3,0,0),(8,1,2,4,3,0,0),(9,1,2,5,3,0,0),(10,1,2,6,3,0,0),(11,1,3,1,3,0,0),(12,1,3,2,3,0,0),(13,1,3,4,3,0,0),(14,1,3,5,3,0,0),(15,1,3,6,3,0,0),(16,1,4,1,3,0,0),(17,1,4,2,3,0,0),(18,1,4,3,3,0,0),(19,1,4,5,3,0,0),(20,1,4,6,3,0,0),(21,1,5,1,3,0,0),(22,1,5,2,3,0,0),(23,1,5,3,3,0,0),(24,1,5,4,3,0,0),(25,1,5,6,3,0,0),(26,1,6,1,3,0,0),(27,1,6,2,3,0,0),(28,1,6,3,3,0,0),(29,1,6,4,3,0,0),(30,1,6,5,3,0,0),(31,2,1,2,3,0,0),(32,2,1,3,3,0,0),(33,2,1,4,3,0,0),(34,2,1,5,3,0,0),(35,2,1,6,3,0,0),(36,2,2,1,3,0,0),(37,2,2,3,3,0,0),(38,2,2,4,3,0,0),(39,2,2,5,3,0,0),(40,2,2,6,3,0,0),(41,2,3,1,3,0,0),(42,2,3,2,3,0,0),(43,2,3,4,3,0,0),(44,2,3,5,3,0,0),(45,2,3,6,3,0,0),(46,2,4,1,3,0,0),(47,2,4,2,3,0,0),(48,2,4,3,3,0,0),(49,2,4,5,3,0,0),(50,2,4,6,3,0,0),(51,2,5,1,3,0,0),(52,2,5,2,3,0,0),(53,2,5,3,3,0,0),(54,2,5,4,3,0,0),(55,2,5,6,3,0,0),(56,2,6,1,3,0,0),(57,2,6,2,3,0,0),(58,2,6,3,3,0,0),(59,2,6,4,3,0,0),(60,2,6,5,3,0,0),(61,3,1,2,3,0,0),(62,3,1,3,3,0,0),(63,3,1,4,3,0,0),(64,3,1,5,3,0,0),(65,3,1,6,3,0,0),(66,3,2,1,3,0,0),(67,3,2,3,3,0,0),(68,3,2,4,3,0,0),(69,3,2,5,3,0,0),(70,3,2,6,3,0,0),(71,3,3,1,3,0,0),(72,3,3,2,3,0,0),(73,3,3,4,3,0,0),(74,3,3,5,3,0,0),(75,3,3,6,3,0,0),(76,3,4,1,3,0,0),(77,3,4,2,3,0,0),(78,3,4,3,3,0,0),(79,3,4,5,3,0,0),(80,3,4,6,3,0,0),(81,3,5,1,3,0,0),(82,3,5,2,3,0,0),(83,3,5,3,3,0,0),(84,3,5,4,3,0,0),(85,3,5,6,3,0,0),(86,3,6,1,3,0,0),(87,3,6,2,3,0,0),(88,3,6,3,3,0,0),(89,3,6,4,3,0,0),(90,3,6,5,3,0,0),(91,1,1,2,4,0,0),(92,1,1,3,4,0,0),(93,1,1,4,4,0,0),(94,1,1,5,4,0,0),(95,1,2,3,4,0,0),(96,1,2,4,4,0,0),(97,1,2,5,4,0,0),(98,1,3,2,4,0,0),(99,1,3,4,4,0,0),(100,1,3,5,4,0,0),(101,1,4,2,4,0,0),(102,1,4,3,4,0,0),(103,1,4,5,4,0,0),(104,2,1,2,4,0,0),(105,2,1,3,4,0,0),(106,2,1,4,4,0,0),(107,2,1,5,4,0,0),(108,2,2,3,4,0,0),(109,2,2,4,4,0,0),(110,2,2,5,4,0,0),(111,2,3,2,4,0,0),(112,2,3,4,4,0,0),(113,2,3,5,4,0,0),(114,2,4,2,4,0,0),(115,2,4,3,4,0,0),(116,2,4,5,4,0,0),(117,3,1,2,4,0,0),(118,3,1,3,4,0,0),(119,3,1,4,4,0,0),(120,3,1,5,4,0,0),(121,3,2,3,4,0,0),(122,3,2,4,4,0,0),(123,3,2,5,4,0,0),(124,3,3,2,4,0,0),(125,3,3,4,4,0,0),(126,3,3,5,4,0,0),(127,3,4,2,4,0,0),(128,3,4,3,4,0,0),(129,3,4,5,4,0,0),(130,1,1,5,5,0,0),(131,1,2,5,5,0,0),(132,1,3,5,5,0,0),(133,1,4,5,5,0,0),(134,1,3,4,5,0,0),(135,2,1,5,5,0,0),(136,2,2,5,5,0,0),(137,2,3,5,5,0,0),(138,2,4,5,5,0,0),(139,2,3,4,5,0,0),(140,3,1,5,5,0,0),(141,3,2,5,5,0,0),(142,3,3,5,5,0,0),(143,3,4,5,5,0,0),(144,3,3,4,5,0,0);
+/*!40000 ALTER TABLE `workflows` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2013-05-27 15:25:04
