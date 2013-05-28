@@ -876,7 +876,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'admin','93b23970fe69d621abce57323304b42e657fd41a','shilian','wang','shi-lian.wang@ivision-china.cn',1,1,'2013-05-27 10:47:57','zh',NULL,'2013-05-27 10:28:40','2013-05-27 10:47:57','User',NULL,'all','b51808a5a4702bb0935910a3b800e88e'),(2,'','','','Anonymous','',0,0,NULL,'',NULL,'2013-05-27 10:44:52','2013-05-27 10:44:52','AnonymousUser',NULL,'only_my_events',NULL),(3,'wangshilian','8b03478d10efa631522dd8c0cbaa0571829695b7','世廉','王','wangshilian@gmail.com',1,1,'2013-05-28 08:58:59','zh',NULL,'2013-05-27 10:47:53','2013-05-28 08:58:59','User',NULL,'only_my_events','09e712dc467f4b241753620e913ca17b');
+INSERT INTO `users` VALUES (1,'admin','93b23970fe69d621abce57323304b42e657fd41a','shilian','wang','shi-lian.wang@ivision-china.cn',1,1,'2013-05-27 10:47:57','zh',NULL,'2013-05-27 10:28:40','2013-05-27 10:47:57','User',NULL,'all','b51808a5a4702bb0935910a3b800e88e'),(2,'','','','Anonymous','',0,0,NULL,'',NULL,'2013-05-27 10:44:52','2013-05-27 10:44:52','AnonymousUser',NULL,'only_my_events',NULL),(3,'wangshilian','8b03478d10efa631522dd8c0cbaa0571829695b7','世廉','王','wangshilian@gmail.com',1,1,'2013-05-28 20:49:26','zh',NULL,'2013-05-27 10:47:53','2013-05-28 20:49:26','User',NULL,'only_my_events','09e712dc467f4b241753620e913ca17b');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 DROP TABLE IF EXISTS `versions`;
