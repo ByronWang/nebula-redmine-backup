@@ -656,7 +656,7 @@ CREATE TABLE `projects_trackers` (
 
 LOCK TABLES `projects_trackers` WRITE;
 /*!40000 ALTER TABLE `projects_trackers` DISABLE KEYS */;
-INSERT INTO `projects_trackers` VALUES (1,1),(1,2),(1,3);
+INSERT INTO `projects_trackers` VALUES (1,2),(1,3);
 /*!40000 ALTER TABLE `projects_trackers` ENABLE KEYS */;
 UNLOCK TABLES;
 DROP TABLE IF EXISTS `queries`;
